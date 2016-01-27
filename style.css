@@ -63,8 +63,36 @@ body {
 	box-shadow: 3px 3px 2px rgba(0,0,0,0.5),
 		inset 0 3px 2px rgba(0,0,0,0.5),
 		1px -1px 0 #D0CDCD;
+}
 
-	background-color: #B8D8F2;
+.left-menu ul li a.first-page .image {
+	background-image: url(img/person1.jpg);
+	background-size: cover;
+	background-position: right top;
+}
+
+.left-menu ul li a.second-page .image {
+	background-image: url(img/person2.jpg);
+	background-size: cover;
+	background-position: right top;
+}
+
+.left-menu ul li a.third-page .image {
+	background-image: url(img/person3.jpg);
+	background-size: cover;
+	background-position: right top;
+}
+
+.left-menu ul li a.fourth-page .image {
+	background-image: url(img/person4.jpg);
+	background-size: cover;
+	background-position: right top;
+}
+
+.left-menu ul li a.fifth-page .image {
+	background-image: url(img/person5.jpg);
+	background-size: cover;
+	background-position: right top;
 }
 
 .left-menu ul li a:before {
@@ -86,4 +114,10 @@ body {
 
 .left-menu ul li a.fourth-page {
 	/*background-color: red;*/
+}
+
+.content-area h1.header {
+	font-size: 100px;
+	text-align: center;
+	color: #bfc667;
 }
