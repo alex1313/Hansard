@@ -1,0 +1,89 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #AAB938;
+}
+
+.full-height {
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.left-menu {
+	margin-left: -15px;
+
+	background-color: #fff;
+
+	box-shadow: 4px 0 4px rgba(0,0,0,0.3);
+}
+
+.left-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.left-menu ul li {
+	list-style: none;
+	
+	margin: 0;
+	padding: 0;
+	height: 20%;
+	
+	padding: 6px 12px;
+}
+
+.left-menu ul li a {
+	display: block;
+	position: relative;
+	height: 100%;
+	z-index: 1;
+
+	border-bottom: 1px solid #3475A3;
+	text-decoration: none;
+}
+
+.left-menu ul li a:hover,
+.left-menu ul li a:focus,
+.left-menu ul li a:active {
+	text-decoration: none;
+}
+
+.left-menu ul li:last-child a {
+	border-bottom: none;
+}
+
+.left-menu ul li a .image {
+	height: 75%;
+	width: 70%;
+	margin-left: -18px;
+	border: 6px solid #fff;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.5),
+		inset 0 3px 2px rgba(0,0,0,0.5),
+		1px -1px 0 #D0CDCD;
+
+	background-color: #B8D8F2;
+}
+
+.left-menu ul li a:before {
+	position:absolute;
+	content: ' ';
+
+	height: 70%;
+	bottom: 6px;
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+	background-color: #AAB938;
+}
+
+.left-menu ul li a.second-page {
+	/*background-color: red;*/
+}
+
+.left-menu ul li a.fourth-page {
+	/*background-color: red;*/
+}
