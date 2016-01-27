@@ -4,6 +4,7 @@ html {
 
 body {
 	background-color: #AAB938;
+	color: #fff;
 }
 
 .full-height {
@@ -15,7 +16,9 @@ body {
 	margin-left: -15px;
 
 	background-color: #fff;
-
+	
+	-moz-box-shadow: 4px 0 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 4px 0 4px rgba(0,0,0,0.3);
 	box-shadow: 4px 0 4px rgba(0,0,0,0.3);
 }
 
@@ -51,53 +54,66 @@ body {
 	text-decoration: none;
 }
 
-.left-menu ul li:last-child a {
+.left-menu ul li a:hover:before,
+.left-menu ul li a:focus:before,
+.left-menu ul li a:active:before {
+	background-color: #A1AE2B;
+}
+
+.left-menu ul li a.active:before {
+	background-color: #005587;
+}
+
+.left-menu ul li:last-child a{
 	border-bottom: none;
+}
+
+.image {
+	border: 6px solid #fff;
+
+	background-size: cover;
+	background-position: right center;
+
+	-webkit-box-shadow: 3px 3px 2px rgba(0,0,0,0.5),
+		inset 0 3px 2px rgba(0,0,0,0.5),
+		0 0 0 1px #D0CDCD;
+	-moz-box-shadow: 3px 3px 2px rgba(0,0,0,0.5),
+		inset 0 3px 2px rgba(0,0,0,0.5),
+		0 0 0 1px #D0CDCD;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.5),
+		inset 0 3px 2px rgba(0,0,0,0.5),
+		0 0 0 1px #D0CDCD;
 }
 
 .left-menu ul li a .image {
 	height: 75%;
 	width: 70%;
 	margin-left: -18px;
-	border: 6px solid #fff;
-	box-shadow: 3px 3px 2px rgba(0,0,0,0.5),
-		inset 0 3px 2px rgba(0,0,0,0.5),
-		1px -1px 0 #D0CDCD;
 }
 
-.left-menu ul li a.first-page .image {
+.page-1 .image {
 	background-image: url(img/person1.jpg);
-	background-size: cover;
-	background-position: right top;
 }
 
-.left-menu ul li a.second-page .image {
+.page-2 .image {
 	background-image: url(img/person2.jpg);
-	background-size: cover;
-	background-position: right top;
 }
 
-.left-menu ul li a.third-page .image {
-	background-image: url(img/person3.jpg);
-	background-size: cover;
-	background-position: right top;
+.page-3 .image {
+	background-image: url(img/person3.jpg);	
 }
 
-.left-menu ul li a.fourth-page .image {
-	background-image: url(img/person4.jpg);
-	background-size: cover;
-	background-position: right top;
+.page-4 .image {
+	background-image: url(img/person4.png);
 }
 
-.left-menu ul li a.fifth-page .image {
-	background-image: url(img/person5.jpg);
-	background-size: cover;
-	background-position: right top;
+.page-5 .image {
+	background-image: url(img/person5.png);
 }
 
 .left-menu ul li a:before {
 	position:absolute;
-	content: ' ';
+	content: '>';
 
 	height: 70%;
 	bottom: 6px;
@@ -105,19 +121,247 @@ body {
 	right: 0;
 	z-index: -1;
 
+	text-align: right;
 	background-color: #AAB938;
+
+	font-family: 'Cabin', sans-serif;
+	color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 77px;
+    padding-right: 10px;
 }
 
-.left-menu ul li a.second-page {
-	/*background-color: red;*/
+.content-area {
+	position: relative;
 }
 
-.left-menu ul li a.fourth-page {
-	/*background-color: red;*/
+.content-area header {
+	height: 20%;
 }
 
-.content-area h1.header {
-	font-size: 100px;
-	text-align: center;
-	color: #bfc667;
+.content-area header h1 {
+    font-size: 100px;
+    color: #bfc667;
+    letter-spacing: 20px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+@media (min-width: 1180px) and (max-width: 1280px) {
+	.content-area header h1 {
+		font-size: 95px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+	.content-area header h1 {
+		font-size: 75px;
+	}
+}
+
+@media (min-width: 860px) and (max-width: 1023px) {
+	.content-area header h1 {
+		font-size: 57px;
+	}
+}
+
+@media (min-width: 10px) and (max-width: 860px) {
+	.content-area header h1 {
+		font-size: 40px;
+	}
+}
+
+.content-area .content {
+	height: 80%;
+	/*overflow: hidden;*/
+	max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-area .content .page {
+	height: 100%;
+	/*overflow: hidden;*/
+}
+
+.content-area footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    padding-bottom: 10px;
+    background-color: #AAB938;
+} 
+
+.content-area footer > div {
+	max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-area footer p {
+	font-size: 11px;
+	letter-spacing: 3px;
+}
+
+#page-home h2 {
+	font-size: 30px;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+}
+
+.page p {
+	margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+.page p.additional {
+	font-size: 15px;
+	margin-left: 100px;
+}
+
+.page .author {
+	float: right;
+}
+
+.page .author h4 {
+	margin-bottom: 0;
+
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.page .author p {
+	font-size: 13px;
+}
+
+.page .white-block {
+	position: relative;
+	
+	margin-bottom: 20px;
+	padding: 25px;
+
+	background-color: #fff;
+	-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+}
+
+.page .white-block h3 {
+    color: #D2D4D4;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.page .white-block h3 strong {
+	color: #31A5D9;
+	font-weight: inherit;
+}
+
+.page .white-block p {
+	color: #0d5587;
+	letter-spacing: 4px;
+	font-weight: 500;
+	font-size: 15px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.page .white-block p strong {
+    font-size: 25px;
+    line-height: 0.1;
+}
+
+.page .white-block p strong:first-child:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #C3C4C5;
+    border-left: 2px solid #C3C4C5;
+    position: absolute;
+    left: -11px;
+    top: -13px; 
+}
+
+.page .white-block p strong:first-child:after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #0d5587;
+    border-left: 2px solid #0d5587;
+    position: absolute;
+    left: -12px;
+    top: -14px;     
+}
+
+.page .white-block p strong:last-child:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid #C3C4C5;
+    border-right: 2px solid #C3C4C5;
+    position: absolute;
+    right: -13px;
+    bottom: 0; 
+}
+
+.page .white-block p strong:last-child:after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid #0d5587;
+    border-right: 2px solid #0d5587;
+    position: absolute;
+    right: -12px;
+    bottom: 1px;     
+}
+
+.page .white-block .image {
+	height: 150px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+
+.page .white-block:before {
+    position: absolute;
+    content: ' ';
+
+    top: 50%;
+    bottom: 20px;
+    left: 60%;
+    right: 0;
+
+    background-color: #0d5587;
+}
+
+#page-1 {
+
+}
+
+#page-2 {
+	
+}
+
+#page-3 {
+	
+}
+
+#page-4 {
+	
+}
+
+#page-5 {
+	
 }
