@@ -75,6 +75,25 @@ body {
 	text-decoration: none;
 }
 
+.menu-header a:hover,
+.menu-header a:focus,
+.menu-header a:active {
+	text-decoration: none;
+	color: white;
+}
+
+a.home-button:hover,
+a.home-button:focus,
+a.home-button:active {
+	background-color: #3b85bf;
+}
+
+a.contact-button:hover,
+a.contact-button:focus,
+a.contact-button:active {
+	background-color: #0b4b7e;
+}
+
 .left-menu ul li a:hover:before,
 .left-menu ul li a:focus:before,
 .left-menu ul li a:active:before {
