@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.left-menu a').click(function(ev) {
+	$('a.navigation').click(function(ev) {
 		ev.preventDefault();
 
 		$(".left-menu a").removeClass("active");
