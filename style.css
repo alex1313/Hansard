@@ -503,6 +503,9 @@ a.menu-link {
 	.left-menu-toggle {
 		display: none;
 	}
+	.left-menu {
+		display: block !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -514,6 +517,7 @@ a.menu-link {
 
 	.left-menu {
 		position: initial;
+		display: none;
 	}
 
 	.left-menu ul li {

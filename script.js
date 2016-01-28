@@ -20,17 +20,4 @@ $(document).ready(function() {
 
 		$(".left-menu").slideToggle();
 	});
-
-	if($(window).width() < 768) {
-		$(".left-menu").hide();
-	}
-
-	$( window ).resize(function() { 
-		if($(window).width() >= 768) {
-			if($(".left-menu").is(':visible') == false) {
-				$(".left-menu").show();
-			}
-		} 
-	});
-
 });
