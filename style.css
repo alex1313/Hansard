@@ -16,8 +16,10 @@
 	src: url("fonts/gill-sans-w01-bold.eot") format("eot"), url("fonts/gill-sans-w01-bold.woff2") format("woff2"), url("fonts/gill-sans-w01-bold.woff") format("woff"), url("fonts/gill-sans-w01-bold.ttf") format("truetype"), url("fonts/gill-sans-w01-bold.svg") format("svg");
 }
 
-html {
-	height: 100%;
+@media (min-width: 860px) {
+	html {
+		height: 100%;
+	}
 }
 
 body {
@@ -26,9 +28,11 @@ body {
 	font-family: 'Gill Sans W01 Medium';
 }
 
-.full-height {
-	height: 100%;
-	overflow-y: hidden;
+@media (min-width: 860px) {
+	.full-height {
+		height: 100%;
+		overflow-y: hidden;
+	}
 }
 
 .left-menu {
@@ -42,13 +46,15 @@ body {
 	box-shadow: 4px 0 4px rgba(0,0,0,0.3);
 }
 
-.left-menu .menu-header {
-	position: absolute;
-	top: 20;
-	left: 0;
-	right: 0;
-	height: 25px;
-	padding: 4px 4px;
+@media (min-width: 860px) {
+	.left-menu .menu-header {
+		position: absolute;
+		top: 20;
+		left: 0;
+		right: 0;
+		height: 25px;
+		padding: 4px 4px;
+	}
 }
 
 .left-menu .menu-footer {
@@ -150,11 +156,14 @@ a.contact-button:active {
 	margin-left: -18px;
 }
 
-.menu-link {
+a.menu-link {
 	float: right;
+	letter-spacing: 2px;
+	color: #1b5b8e;
 }
 
 .menu-button {
+	font-family: "Gill Sans W01 Light", sans-serif;
 	margin: 1px;
 	float: right;
 
@@ -163,7 +172,9 @@ a.contact-button:active {
 	color: white;
 	border-radius: 0;
 
+	font-size: 0.9em;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 .contact-button {
@@ -175,28 +186,28 @@ a.contact-button:active {
 }
 
 .page-1 .image {
-	background-image: url(img/person1.jpg);
+	background-image: url(img/person1_low.jpg);
 }
 
 .page-2 .image {
-	background-image: url(img/person2.jpg);
+	background-image: url(img/person2_low.jpg);
 }
 
 .page-3 .image {
-	background-image: url(img/person3.jpg);	
+	background-image: url(img/person3_low.jpg);	
 }
 
 .page-4 .image {
-	background-image: url(img/person4.png);
+	background-image: url(img/person4_low.jpg);
 }
 
 .page-5 .image {
-	background-image: url(img/person5.png);
+	background-image: url(img/person5_low.jpg);
 }
 
 .left-menu ul li a:before {
 	position:absolute;
-	content: '>';
+	content: '';
 
 	height: 70%;
 	bottom: 6px;
@@ -205,14 +216,8 @@ a.contact-button:active {
 	z-index: -1;
 
 	text-align: right;
-	background-color: #AAB938;
-
-	font-family: 'Cabin', sans-serif;
-	color: #fff;
-    font-size: 100px;
-    font-weight: bold;
-    line-height: 77px;
-    padding-right: 10px;
+    background: #AAB938 url(img/arrow.png) no-repeat center right;
+    background-size: auto 100%;
 }
 
 .content-area {
@@ -221,40 +226,18 @@ a.contact-button:active {
 
 .content-area header {
 	height: 20%;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 .content-area header h1 {
-    font-size: 100px;
+    font-size: 90px;
     color: #bfc667;
     letter-spacing: 20px;
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
-}
-
-@media (min-width: 1180px) and (max-width: 1280px) {
-	.content-area header h1 {
-		font-size: 95px;
-	}
-}
-
-@media (min-width: 1024px) and (max-width: 1179px) {
-	.content-area header h1 {
-		font-size: 75px;
-	}
-}
-
-@media (min-width: 860px) and (max-width: 1023px) {
-	.content-area header h1 {
-		font-size: 57px;
-	}
-}
-
-@media (min-width: 10px) and (max-width: 860px) {
-	.content-area header h1 {
-		font-size: 40px;
-	}
+    margin-top: 30px;
 }
 
 .content-area .content {
@@ -275,7 +258,6 @@ a.contact-button:active {
 	bottom: 0;
 	left: 0;
     right: 0;
-    padding-bottom: 10px;
     background-color: #AAB938;
 } 
 
@@ -290,22 +272,34 @@ a.contact-button:active {
 	letter-spacing: 3px;
 }
 
+.content-area footer .logo {
+	background: url(img/logo.png);
+	background-size: cover;
+	width: 100px;
+	height: 94px;
+	float: right;
+	margin-top: -80px;
+}
+
 #page-home h2 {
+	font-family: "Gill Sans W01 Light", sans-serif;
 	font-size: 30px;
     letter-spacing: 8px;
     margin-bottom: 30px;
 }
 
 .page p {
-	margin-bottom: 20px;
-    line-height: 1.7;
-    font-size: 17px;
-    letter-spacing: 4px;
+	font-family: "Gill Sans W01 Light", sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    font-size: 21px;
+    letter-spacing: 3px;
 }
 
 .page p.additional {
 	font-size: 15px;
-	margin-left: 100px;
+    margin-left: 160px;
+    line-height: 1.5;
 }
 
 .page .author {
@@ -350,12 +344,13 @@ a.contact-button:active {
 }
 
 .page .white-block p {
-	color: #0d5587;
-	letter-spacing: 4px;
-	font-weight: 500;
-	font-size: 15px;
-	margin-top: 20px;
-	position: relative;
+    color: #0d5587;
+    font-size: 17px;
+    margin-top: 20px;
+    position: relative;
+    font-family: "Gill Sans W01 Bold", sans-serif;
+    line-height: 1.6;
+    margin-left: 15px;
 }
 
 .page .white-block p strong {
@@ -429,22 +424,183 @@ a.contact-button:active {
     background-color: #0d5587;
 }
 
-#page-1 {
-
+@media (min-width: 1180px) and (max-width: 1280px) {
+	.content-area header h1 {
+		font-size: 80px;
+	}
 }
 
-#page-2 {
-	
+@media (min-width: 1024px) and (max-width: 1179px) {
+	.content-area header h1 {
+		font-size: 60px;
+	}
 }
 
-#page-3 {
-	
+@media (min-width: 860px) and (max-width: 1023px) {
+	.content-area header h1 {
+		font-size: 47px;
+	}
 }
 
-#page-4 {
-	
+
+
+@media (min-height: 765px) {
+	.content-area header h1 {
+		margin-top: 60px;
+	}
 }
 
-#page-5 {
-	
+@media (max-height: 700px), (max-width: 1179px) {
+	.page .white-block {
+		padding: 10px;
+	}
+
+	.page p {
+		font-size: 19px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-height: 650px) {
+	.content-area header {
+		position: absolute;
+		height: 90px;
+	}
+
+	.content-area header h1 {
+		margin-top: 10px;
+	}
+
+	.content-area .content {
+		height: 100%;
+		padding-top: 90px;
+	}
+
+	.page p {
+		font-size: 19px;
+		margin-bottom: 10px;
+	}
+
+	.content-area footer .logo {
+		width: 50px;
+		height: 47px;
+		margin-top: -32px;
+	}
+}
+
+@media (max-height: 550px) {
+	.page p {
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+
+	.content-area .content {
+		padding-top: 70px;
+	}
+}
+
+@media (min-width: 860px) {
+	.left-menu-toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 859px) {
+	.content-area header h1 {
+		font-size: 30px;
+		letter-spacing: 5px;
+		margin-top: 20px;
+	}
+
+	.left-menu {
+		position: initial;
+	}
+
+	.left-menu ul li {
+		height: 100px;
+	}
+
+	.left-menu ul li a .image {
+		width: 60%;
+	}
+
+	.left-menu .menu-header {
+		padding: 12px;
+	}
+
+	.menu-button {
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.left-menu ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	#page-home h2 {
+		font-size: 24px;
+	}
+
+	.content-area .content .page {
+		height: auto;
+	}
+
+	.content-area .content {
+		height: auto;
+	}
+
+	.content-area footer {
+		position: relative;
+		bottom: auto;
+		right: auto;
+		left: auto;
+		height: auto;
+	}
+
+	.content-area footer .logo {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+	}
+
+	.page .author {
+		float: none;
+	}
+
+	.page p.additional {
+		margin-left: 0;
+	}
+
+	.page .white-block h3 {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+
+	.page .white-block:before {
+	    top: 100px;
+	    height: 120px;
+	    left: 20%;
+	    bottom: auto;
+	}
+
+	.page .white-block p strong:last-child:before {
+		right: -3px;
+	}
+
+	.page .white-block p strong:last-child:after {
+		right: -2px;
+	}
+
+	.left-menu-toggle {
+		background: none;
+    	margin-left: -6px;
+	}
 }
