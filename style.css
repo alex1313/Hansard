@@ -1,3 +1,21 @@
+@font-face {
+	font-family: "Gill Sans W01 Light";
+	src: url("fonts/gill-sans-w01-light.eot");
+	src: url("fonts/gill-sans-w01-light.eot") format("eot"), url("fonts/gill-sans-w01-light.woff2") format("woff2"), url("fonts/gill-sans-w01-light.woff") format("woff"), url("fonts/gill-sans-w01-light.ttf") format("truetype"), url("fonts/gill-sans-w01-light.svg") format("svg");
+}
+
+@font-face {
+	font-family: "Gill Sans W01 Medium";
+	src: url("fonts/gill-sans-w01-medium.eot");
+	src: url("fonts/gill-sans-w01-medium.eot") format("eot"), url("fonts/gill-sans-w01-medium.woff2") format("woff2"), url("fonts/gill-sans-w01-medium.woff") format("woff"), url("fonts/gill-sans-w01-medium.ttf") format("truetype"), url("fonts/gill-sans-w01-medium.svg") format("svg");
+}
+
+@font-face {
+	font-family: "Gill Sans W01 Bold";
+	src: url("fonts/gill-sans-w01-bold.eot");
+	src: url("fonts/gill-sans-w01-bold.eot") format("eot"), url("fonts/gill-sans-w01-bold.woff2") format("woff2"), url("fonts/gill-sans-w01-bold.woff") format("woff"), url("fonts/gill-sans-w01-bold.ttf") format("truetype"), url("fonts/gill-sans-w01-bold.svg") format("svg");
+}
+
 html {
 	height: 100%;
 }
@@ -5,6 +23,7 @@ html {
 body {
 	background-color: #AAB938;
 	color: #fff;
+	font-family: 'Gill Sans W01 Medium';
 }
 
 .full-height {
