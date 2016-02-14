@@ -20,4 +20,6 @@ $(document).ready(function() {
 
 		$(".left-menu").slideToggle();
 	});
+
+	$('.testimonials-slider').unslider({ 'arrows': false });
 });
