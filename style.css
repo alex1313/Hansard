@@ -484,7 +484,7 @@ a.menu-link + a.menu-link:after {
     left: 60%;
     right: 0;
 
-    background-color: #0d5587;
+    background-color: #AAB938; /*#0d5587*/
 }
 
 @media (min-width: 1180px) and (max-width: 1280px) {
