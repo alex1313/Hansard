@@ -294,7 +294,7 @@ a.menu-link + a.menu-link:after {
 
 .content-area .content .page {
 	height: 100%;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 .content-area footer {
@@ -319,7 +319,7 @@ a.menu-link + a.menu-link:after {
 .content-area footer .logo {
 	background: url(img/logo.png);
 	background-size: cover;
-	width: 100px;
+	width: 98px;
 	height: 94px;
 	float: right;
 	margin-top: -80px;
