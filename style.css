@@ -294,7 +294,7 @@ a.menu-link + a.menu-link:after {
 
 .content-area .content .page {
 	height: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .content-area footer {
