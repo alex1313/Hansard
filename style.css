@@ -385,6 +385,7 @@ a.menu-link + a.menu-link:after {
 	position: relative;
 	
 	margin-bottom: 20px;
+	margin-right: 4px;
 	padding: 25px;
 
 	background-color: #fff;
