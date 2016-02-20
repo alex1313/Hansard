@@ -81,8 +81,6 @@ a.muted:focus {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-top: 25px;
-	padding-bottom: 25px;
 }
 
 .left-menu ul li {
@@ -90,7 +88,7 @@ a.muted:focus {
 	
 	margin: 0;
 	padding: 0;
-	height: 20%;
+	height: 16.66667%;
 	
 	padding: 6px 12px;
 }
@@ -249,6 +247,10 @@ a.menu-link + a.menu-link:after {
 	background-image: url(img/person5_low.jpg);
 }
 
+.page-6 .image {
+    background-image: url(img/person_main.jpg);
+}
+
 .left-menu ul li a:before {
 	position:absolute;
 	content: '';
@@ -312,11 +314,23 @@ a.menu-link + a.menu-link:after {
 	max-width: 950px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .content-area footer p {
-	font-size: 11px;
+	font-size: 14px;
 	letter-spacing: 3px;
+    font-family: "Gill Sans W01 Light", sans-serif;
+    padding-bottom: 20px;
+}
+
+.content-area footer p a {
+    padding: 5px 10px;
+    border-left: 1px solid #fff;
+}
+
+.content-area footer p a:first-child {
+    border-left: none;
 }
 
 .content-area footer .logo {
@@ -325,7 +339,30 @@ a.menu-link + a.menu-link:after {
 	width: 98px;
 	height: 94px;
 	float: right;
-	margin-top: -80px;
+	margin-top: -55px;
+}
+
+.content-area.home footer .logo {
+    display: none;
+}
+
+.content-area header .home-page-logo {
+    display: none;
+    background: url(img/logo.png);
+    background-size: cover;
+    width: 98px;
+    height: 94px;
+    margin-top: 20px;
+}
+
+.content-area.home header .home-page-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-home {
+    padding-top: 140px;
 }
 
 .page-home h2 {
@@ -383,6 +420,12 @@ a.menu-link + a.menu-link:after {
 .page .author p {
 	font-size: 13px;
 }
+
+.page .author p strong {
+    font-family: "Gill Sans W01 Bold", sans-serif;
+}
+
+
 
 .page .white-block {
 	position: relative;
@@ -527,7 +570,7 @@ a.menu-link + a.menu-link:after {
 	}
 }
 
-@media (max-height: 650px) {
+@media (max-height: 650px) and (min-width: 768px) {
 	.content-area header {
 		position: absolute;
 		height: 90px;
@@ -550,7 +593,7 @@ a.menu-link + a.menu-link:after {
 	.content-area footer .logo {
 		width: 50px;
 		height: 47px;
-		margin-top: -32px;
+		margin-top: -14px;
 	}
 }
 
@@ -575,6 +618,10 @@ a.menu-link + a.menu-link:after {
 }
 
 @media (max-width: 767px) {
+    .page-home {
+        padding-top: 0;
+    }
+
 	.content-area header h1 {
 		font-size: 30px;
 		letter-spacing: 5px;
@@ -639,6 +686,7 @@ a.menu-link + a.menu-link:after {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0;
+        margin-bottom: 10px;
 	}
 
 	.page .author {
