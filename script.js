@@ -16,8 +16,14 @@ $(document).ready(function() {
 
 		if(page == "home" || page == "6") {
 			$(".content-area").addClass("home");
+
+			if(page == "6") {
+				$(".content-area").addClass("home-page-6");
+			} else {
+                $(".content-area").removeClass("home-page-6");
+            }
 		} else {
-			$(".content-area").removeClass("home");
+			$(".content-area").removeClass("home home-page-6");
 		}
 	});
 
