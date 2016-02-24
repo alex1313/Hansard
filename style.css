@@ -160,7 +160,7 @@ a.contact-button:active {
 }
 
 .left-menu ul li a .image {
-	height: 75%;
+	height: 65%;
 	width: 70%;
 	margin-left: -18px;
 }
@@ -266,6 +266,15 @@ a.menu-link + a.menu-link:after {
     background-size: auto 100%;
 }
 
+.left-menu ul li a span {
+    height: 35%;
+    display: block;
+    margin-left: 10px;
+    color: #fff;
+    font-family: "Gill Sans W01 Light", sans-serif;
+    letter-spacing: 2px;
+}
+
 .content-area {
 	position: relative;
 }
@@ -347,18 +356,19 @@ a.menu-link + a.menu-link:after {
 }
 
 .content-area header .home-page-logo {
-    display: none;
+
     background: url(img/logo.png);
     background-size: cover;
     width: 98px;
     height: 94px;
-    margin-top: 20px;
+    margin-top: -100px;
+    transition: margin-top 1s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-area.home header .home-page-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
 }
 
 .page-home {
@@ -398,6 +408,12 @@ a.menu-link + a.menu-link:after {
 	font-size: 15px;
     margin-left: 160px;
     line-height: 1.5;
+}
+
+.page p.additional.additional-2 {
+    margin-left: 0;
+    margin-right: 160px;
+    clear: both;
 }
 
 .page .author {

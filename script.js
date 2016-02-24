@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$(".content > .page:visible").slideUp();
 		$(".content > #page-" + page).slideDown();
 
-		if(page == "home") {
+		if(page == "home" || page == "6") {
 			$(".content-area").addClass("home");
 		} else {
 			$(".content-area").removeClass("home");
