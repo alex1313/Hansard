@@ -266,12 +266,14 @@ a.menu-link + a.menu-link:after {
 }
 
 .left-menu ul li a span {
-    height: 35%;
-    display: block;
-    margin-left: 10px;
-    color: #fff;
-    font-family: "Gill Sans W01 Light", sans-serif;
-    letter-spacing: 2px;
+	display: block;
+	margin-left: 10px;
+	color: #fff;
+	font-family: "Gill Sans W01 Light", sans-serif;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 82.5%;
+	transform: translateY(-58%);
 }
 
 .content-area {
@@ -348,6 +350,7 @@ a.menu-link + a.menu-link:after {
 	height: 94px;
 	float: right;
 	margin-top: -55px;
+    display: none;
 }
 
 .content-area.home footer .logo {
@@ -356,24 +359,24 @@ a.menu-link + a.menu-link:after {
 
 
 .content-area header .home-page-logo {
-
     background: url(img/logo.png);
     background-size: cover;
-    width: 98px;
-    height: 94px;
-    margin-top: -100px;
-    transition: margin-top 1s, margin-right 1s;
+    width: 130px;
+    height: 124px;
+    margin-top: -130px;
+    margin-right: 30px;
     margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0px;
+    transition: margin-top 1s, margin-right 1s, margin-bottom 1s;
 }
 
 .content-area.home header .home-page-logo {
     margin-top: 20px;
+    margin-bottom: -30px;
 }
 
 .content-area.home-page-6 header .home-page-logo {
-	margin-right: 30px;
-
+	/*margin-right: 30px;*/
 }
 
 .page-home {
