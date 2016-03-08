@@ -39,6 +39,10 @@ a.muted:focus {
 	color: #31A5D9;
 }
 
+.text-center {
+	text-align: center;
+}
+
 @media (min-width: 768px) {
 	.full-height {
 		height: 100%;
@@ -419,8 +423,9 @@ a.menu-link + a.menu-link:after {
 }
 
 .page p.additional.additional-2 {
-    margin-left: 0;
-    margin-right: 160px;
+    margin-left: 80px;
+    margin-right: 80px;
+	text-align: center;
     clear: both;
 }
 
